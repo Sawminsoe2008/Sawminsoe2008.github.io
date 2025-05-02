@@ -3,130 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        /* Modern, clean styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            margin-bottom: 1rem;
-        }
-        
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 1rem auto;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        section {
-            margin-bottom: 2rem;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: #2980b9;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 1rem;
-            color: #7f8c8d;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUEQzg_7jMwD3To8Qk0-kulr0Stzd_ElApLxw_hEVMxcZdFI6V8WGTxF1EI2pGQG6nwrnFXpQBXqBrc_Et02Z_ItQGPOFZPADvlHPUnLNHYy1FyDWoM7Th-vNpzFj34EOV3ydRKhRPAZGdVl1EnIbgMQ_5rnIu35xxqxbaI080uwKTbup943eirbOJyMBTZ8E8AGXSTGANMlsmZYg5k8mlVmUK11w29-13QcABwW5GJZqLoQ0vYl0fNSeMkIIZMX4Wm9OsCTzoRcc0i9Ry6y9giAAGaSFZ3veXjn74CpltaFmAmCEqkWe5m9q68svfkQwx8dOwSU_1QxLGyX1QeOOQ-NjHES2nsfCAtW0ElBMikt1YSzW3pp57nyPnvZzeWCGFlpSfGE-9tusMgivwuZqLgj_nty3m5b7VyMqPfbrAWSIv23fN634UQINzG6kqpCRjmp73bWovuRckFq8CDYL4ikxfK-f4vC35jTwj9xBAhA1UB_U9n2pNjI_oRPEcGkTHeukWV5YheyxnO7mP1awwPkdKsGHGmRStrWcZGglsp_gIMHOe2esC6XZC_spY1dkfKRQng-JeWhsJSXCmC4HMveksi84ytJW9Odu_qkeJdgflvG5-hvLeOoJoq1Iap4xZRm6IBJpVyzacZAHlYGlASk97JmuaDyPWI5-m-hYooN68SIkMd48pR6J0VaZi-V8uGiAQH5L58R2LWbG_TcK9GybK6J_XYu42qxYHWhe-1E7uNGXjwhomSTFsdquUhKSrLCy7-W1YjIipWf762Ef6cVGB6rKT3BDVqPQMyhy5ELyv-Z_BMSdM6usrH0TyDZIyx4iK0lRStDKnxfxrp8h2NM6Xlc7IKrHnn8PqDXIQGSvh1jEf4ggUgQkC_M2MNuz6cWP5c-Nbi77aRqcIGMIURHEjyd9SJHbeqn4nSLjz7U_0zj294X9gc3SE33bEV9ZePBiPLEdINL04w5paHMsVfqrQ=s432-c-no" alt="နီကျားလေး" class="profile-img">
-            <h1>Saw Min Min Soe</h1>
-            <p class="tagline">Web Developer & Designer</p>
-        </header>
-        
-        <section>
-            <h2>About Me</h2>ကျွန်တော်က ၉တန်း ကျောင်းသားတစ်ဦးပါ။ ယခုလက်ရှိ ကျွန်တော်က Project Book Archive တွေကို ရေးသားပြုစုပေးပါတယ်။ကျွန်တော်ဝါသနာက အများသူတွေကို ပရဟိတလုပ်ပေးတာနှစ်သက်ပါတယ်။
-            <p>Hello! I'm Saw Min Min Soe</p>
-            <p>When I'm not coding, you can find me hiking, reading, or exploring new coffee shops in my city.</p>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                </div>
+                <div class="header-text">
+                    <h1>John Doe</h1>
+                    <h2>Web Developer & Designer</h2>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm John, a passionate web developer with 5 years of experience creating beautiful and functional websites. I specialize in front-end development but also have strong back-end skills. When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.</p>
         </section>
-        
-        <section>
-            <h2>Skills 1</h2>
-            <p>HTML, CSS, JavaScript, React, Node.js, UI/UX Design</p>
-        </section>
-        
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out if you'd like to collaborate or just say hello!</p>
-            <p>Email: your.email@example.com</p>
-            
-            <div class="social-links">
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Twitter</a>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <footer>
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
-        </footer>
-    </div>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online store with payment integration and admin dashboard.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                    <h3>Task Management App</h3>
+                    <p>A productivity app to help teams organize and track their work.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                    <h3>Portfolio Template</h3>
+                    <p>A responsive portfolio template for creative professionals.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Web Developer</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Lead a team of developers to build enterprise web applications. Implemented new frameworks that improved development speed by 30%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Web Developer</h3>
+                        <h4>Digital Creations</h4>
+                        <p>Developed and maintained client websites. Worked closely with designers to implement responsive layouts.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2017</div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <h4>StartUp Ventures</h4>
+                        <p>Assisted in developing web applications and fixing bugs. Learned modern web development practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
