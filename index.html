@@ -242,9 +242,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
 /* Variables */
 :root {
     --primary-color: #2563eb;
@@ -883,56 +880,5 @@ section {
     .about-stats {
         grid-template-columns: 1fr;
     }
-}
-// Mobile Navigation
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    
-    // Animate Links
-    links.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = '';
-        } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-        }
-    });
-    
-    // Hamburger Animation
-    hamburger.classList.toggle('toggle');
-});
-
-// Close mobile menu when clicking on a link
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('toggle');
-        links.forEach(link => {
-            link.style.animation = '';
-        });
-    });
-});
-
-// Sticky Navigation
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('scrolled', window.scrollY > 0);
-});
-
-// Smooth Scrolling for all links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-        });
-    });
-});
+  
